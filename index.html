@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ping pong</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind+Siliguri">
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  <body>
-<!-- my container -->
-<div class="container-fluid">
-  <div class="media">
-    <div class="overlay">
-      <h3 class="mane">Ping Pong</h3>
+    <head>
+        <title>Ping pong</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Modak">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind+Siliguri">
+    </head>
+<body>
+<!--media--->
+    <div class="media">
+        <div class="overlay">
 
+			<a href="#game"><img src="images/playButton.png"  class="img-responsive" style="display:inline" alt="KUCU" width="200" height="400" id="start"></a>
+        </div>
     </div>
-  </div>
-    <a href="#play"><img src="images/playButton.png"  class="img-responsive" style="display:inline"  width="200" height="400" id="player"></a>
-</div>
-<!-- end of my container -->
-<!--  -->
-<div class="container-fluid brown">
+<!--End media-->
+
+<!--game-->
+<div class="container-fluid">
     <div class="row">
         <div id="game"  class="col-md-8 bg-1">
 			<div class="content">
@@ -30,7 +29,7 @@
 				<ol>
 					<li>Numbers divisible by 3 are replaced with "ping"</li>
 					<li>Numbers divisible by 5 are replaced with "pong"</li>
-					<li>Numbers divisible by 1 are replaced with "pingpong"</li>
+					<li>Numbers divisible by 15 are replaced with "pingpong"</li>
 				</ol>
 				<br><br>
 				<h4>Enter your number here: </h4>
@@ -48,14 +47,29 @@
         <div class="col-md-4 side">
             <div class="content">
                 <h1>About Ping Pong</h1><br>
-                <h3>Created By: <em>Lewis Mutuma</em></h3>
+                <h3>Created By: <em>LEWIS MUTUMA</em></h3>
 				<h3>Level 2 Test for:</h3>
                 <h4>Javascript</h4><br>
-                <h3><a href="#"><i class="fa fa-github" aria-hidden="true" style="font-size:60px; color:purple;"></i></a></h3>
+                <h3><a href="#"><i class="fa fa-github" aria-hidden="true" style="font-size:60px; color:#FFA500;"></i></a></h3>
             </div>
         </div>
     </div>
 </div>
-<!--  -->
-  </body>
+<!--End game--->
+
+
+<!--Bootstrap scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Jquery scripts-->
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+<script src="js/script.js"></script>
+</body>
 </html>

@@ -1,31 +1,46 @@
 body{
-  background-color: black;
+    margin: 0;
 }
-h3{
-  color: white;
+p{
+	font-size: 16px;
 }
-.container-fluid{
-  background-image: url("../images/backgroung.jpg");
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-
+li{
+	font-size: 16px;
 }
-.play{
-  background:rgba(0,0,0,0.7);
-  text-align: center;
+.media{
+    height: 900px;
+    width:100%;
+    background-image: url(../images/logopingpong.jpg);
+     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: -70px;
 }
-#player{
-    padding-top:500px;
-    margin-left: 50%;
+.overlay{
+    margin: auto;
+    width: 100%;
+    height: 900px;
+    background:rgba(0,0,0,0.7);
 }
-
+#start{
+    padding-top: 500px;
+    margin-left: 45%;
+}
+.name{
+    padding-top: 200px;
+    text-align: center;
+    text-transform:uppercase;
+    font-family: 'Modak', cursive;
+    color: white;
+    font-size: 200px;
+}
 .bg-1{
 	padding: 0;
 }
-.brown{
-  background-color: lightgrey;
-}
-
 .side{
 	color: #ffffff;
 	padding: 0;
@@ -65,4 +80,5 @@ input[type=text], select {
 .content{
 	padding: 10%;
     text-align: left;
+    font-family: 'Hind Siliguri', cursive;
 }
