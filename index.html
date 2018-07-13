@@ -24,19 +24,24 @@
         <div id="game"  class="col-md-8 bg-1">
 			<div class="content">
         <!--  -->
-        <form action="#">
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-          </div>
-          <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="remember"> Remember me</label>
-          </div>
-        </form>
+        <h3>Sign in to play</h3>
+
+        <div class="form">
+          <form action="#">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+          </form>
+        </div>
+
         <!--  -->
         <button type="button" name="button" class="btn btn-success">SIGN IN</button>
         <!--  -->
@@ -67,7 +72,10 @@
                 <h3>Created By: <em>LEWIS MUTUMA</em></h3>
 				<h3>Level 2 Test for:</h3>
                 <h4>Javascript</h4><br>
-                <h3><a href="#"><i class="fa fa-github" aria-hidden="true" style="font-size:60px; color:#FFA500;"></i></a></h3>
+
+                <h3><a href="#"><i class="fa fa-github" aria-hidden="true" style="font-size:40px; color:#FFA500;"></i></a></h3>
+                <h3> <a href="#"><i class="fa fa-facebook" aria-hidden="true" style="font-size:40px; color:blue;"></i></a> </h3>
+              
             </div>
         </div>
     </div>
@@ -80,11 +88,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!--Jquery scripts-->
+<script src="js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+.form{
+   display: none;
+}
+
 $(document).ready(function(){
     $("button").click(function(){
-        $("form").toggle(2000);
+        $("form").show(2000).hide(2000);
     });
 });
 </script>
@@ -95,6 +108,6 @@ $(document).ready(function(){
   crossorigin="anonymous"></script>
 
 
-<script src="js/script.js"></script>
+
 </body>
 </html>
