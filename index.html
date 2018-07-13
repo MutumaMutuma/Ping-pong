@@ -23,6 +23,22 @@
     <div class="row">
         <div id="game"  class="col-md-8 bg-1">
 			<div class="content">
+        <!--  -->
+        <form action="#">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-default btn btn-success">Submit</button>
+        </form>
+        <!--  -->
                 <h1><b>Let's Play!</b></h1>
                 <h3><b>Rules:</b></h3>
 				<p>PingPong will count upto your number from 1 with the following exceptions:</p>
@@ -63,6 +79,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!--Jquery scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("form").toggle(2000);
+    });
+});
+</script>
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
