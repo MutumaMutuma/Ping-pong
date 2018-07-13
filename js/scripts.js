@@ -1,6 +1,3 @@
-alert("Hi there!");
+alert("Hi there!")
 //business logic
 var numbersToBePingponged = [];
-
-
-}
