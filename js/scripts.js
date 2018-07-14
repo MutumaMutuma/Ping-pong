@@ -33,4 +33,8 @@ $(document).ready(function(){
          $("#output").append('<li>' + number + "</li>");
       });
    });
+
+   $("button").click(function(){
+     $
+   })
 });
