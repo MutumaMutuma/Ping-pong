@@ -1,9 +1,9 @@
-alert("Hi there")
+alert("Hi there");
 //business logic
 var numbersToBePingponged = [];
 
 function pingPong (number){
-    for (var index = 1; index <= number; index+=1){
+    for (var index = 1; index <= number; index++){
         if(index % 15 === 0){
             numbersToBePingponged.push("pingpong");
         }
@@ -17,13 +17,13 @@ function pingPong (number){
             numbersToBePingponged.push(index);
         }
     }
-})
+};
 
 
 //user interface logic
 
 $(document).ready(function(){
-   $("form#ping-pong").submit(function(){
+   $("form#ping-pong").submit(function(event){
       event.preventDefault();
       var number = parseInt($("input#number").val());
 
