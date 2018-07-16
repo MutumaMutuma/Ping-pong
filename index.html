@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Modak">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind+Siliguri">
-
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     </head>
 <body>
 <!--media--->
@@ -44,7 +44,14 @@
         </div>
 
         <!--  -->
-        <button type="button" name="button" class="btn btn-success">SIGN IN</button>
+        <div class="sign">
+          <button type="button" class="btn btn-success"  onclick="myFunction()">SIGN IN</button>
+
+<div id="snackbar">Thankyou for signing in, HAVE FUN..</div>
+
+        </div>
+
+
         <!--  -->
                 <h1><b>Let's Play!</b></h1>
                 <h3><b>Rules:</b></h3>
@@ -95,14 +102,20 @@
 </div>
 <!--End game--->
 
-
+<script>
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 <!--Bootstrap scripts-->
 <!--Jquery scripts-->
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  
+
 <script src="js/scripts.js" type="text/javascript"></script>
 <!--  -->
 
